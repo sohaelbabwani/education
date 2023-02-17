@@ -1,0 +1,49 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+vector<int> generate_primes(int start, int end) {
+    vector<bool> sieve(end+1, true);
+    vector<int> primes;
+    
+    sieve[0] = false;
+    sieve[1] = false;
+    
+    int limit = sqrt(end);
+    
+    for (int i = 2; i <= limit; i++) {
+        if (sieve[i]) {
+            for (int j = i*i; j <= end; j += i) {
+                sieve[j] = false;
+            }
+        }
+    }
+    
+    for (int i = start; i <= end; i++) {
+        if (sieve[i]) {
+            primes.push_back(i);
+        }
+    }
+    
+    return primes;
+}
+
+int main() {
+    int start, end;
+    cout << "Enter the start number: ";
+    cin >> start;
+    cout << "Enter the end number: ";
+    cin >> end;
+    
+    vector<int> primes = generate_primes(start, end);
+    
+    cout << "Prime numbers between " << start << " and " << end << " are:" << endl;
+    for (int prime : primes) {
+        cout << prime << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
