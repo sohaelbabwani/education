@@ -1,0 +1,21 @@
+#python code to extract telephone numbers and email ids from given contacts
+#This code defines a function called extract_contacts_info that takes a list of contacts as input and returns a dictionary with two keys: "phone_numbers" and "email_addresses". The function uses regular expressions to match phone numbers and email addresses in each contact, and adds the matching strings to the appropriate lists in the dictionary.
+
+import re
+
+def extract_contacts_info(contacts):
+    phone_pattern = re.compile(r"\b\d{3}[-.]?\d{3}[-.]?\d{4}\b")  # matches phone numbers in the format XXX-XXX-XXXX or XXX.XXX.XXXX or XXXXXXXXXX
+    email_pattern = re.compile(r"\b[\w.-]+@[\w.-]+\.\w{2,}\b")  # matches email addresses in the format username@domain.com
+
+    extracted_info = {"phone_numbers": [], "email_addresses": []}
+
+    for contact in contacts:
+        phone_match = phone_pattern.search(contact)
+        if phone_match:
+            extracted_info["phone_numbers"].append(phone_match.group())
+
+        email_match = email_pattern.search(contact)
+        if email_match:
+            extracted_info["email_addresses"].append(email_match.group())
+
+    return extracted_info
