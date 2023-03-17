@@ -1,0 +1,29 @@
+import random
+
+def binary_search_guess(low, high, answer):
+    steps = 0
+    while low <= high:
+        mid = (low + high) // 2
+        guess = mid
+        steps += 1
+
+        if guess == answer:
+            return steps
+        elif guess < answer:
+            low = mid + 1
+        else:
+            high = mid - 1
+            
+    return steps
+
+# Change the range of possible numbers as necessary
+low = 1 
+high = 100
+
+# Generate a random number in the range
+answer = random.randint(low, high)
+
+# Call the function to guess the number efficiently
+steps = binary_search_guess(low, high, answer)
+print(f"The number {answer} was guessed in {steps} steps.")
+This code generates a random number between 1 and 100, and then uses a binary search approach to guess the number, taking the minimum amount of steps. You can change the range of possible numbers by adjusting the low and high variables.
