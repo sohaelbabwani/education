@@ -47,4 +47,4 @@ int main() {
     return 0;
 }
 
-\\The algorithm is based on a formula that takes the day, month, and year as input and returns a value that corresponds to the day of the week. The formula involves a number of arithmetic operations that manipulate the input values and produce an integer value that is used to compute the day of the week. The resulting integer is then used to determine the day of the week using a simple switch statement.
+\\The algorithm is based on a formula that takes the day, month, and year as input and returns a value that corresponds to the day of the week. The formula involves a number of arithmetic operations that manipulate the input values and produce an integer value that is used to compute the day of the week. The resulting integer is then used to determine the day of the week using a simple switch statement. However, it considers January is month number 13 and February as month number 14 of the previous year.
