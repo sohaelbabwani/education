@@ -1,4 +1,4 @@
-# Bubble sort in Python
+# Bubble sort in Python. Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.
 
 def bubbleSort(array):
     
