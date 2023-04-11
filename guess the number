@@ -1,3 +1,5 @@
+#It begins with importing random
+
 import random
 
 def binary_search_guess(low, high, answer):
