@@ -1,3 +1,4 @@
+//Begin with importing standard input output header file
 #include <stdio.h>
 
 int main() {
