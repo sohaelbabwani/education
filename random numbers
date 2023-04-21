@@ -1,5 +1,7 @@
+# This program uses the randint() function from the random module to generate a random integer between 1 and 100.
+
 from random import randint
 x = randint(1, 100)
 print(x)
 
-# This program uses the randint() function from the random module to generate a random integer between 1 and 100.
+
