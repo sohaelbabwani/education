@@ -1,4 +1,4 @@
-# Import QRCode from pyqrcode
+# Import QRCode from pyqrcode and png
 import pyqrcode
 import png
 from pyqrcode import QRCode
