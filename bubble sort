@@ -2,7 +2,7 @@
 
 def bubbleSort(array):
     
-  # loop to access each array element
+  # loop to access each array elements
   for i in range(len(array)):
 
     # loop to compare array elements
