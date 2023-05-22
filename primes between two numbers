@@ -1,4 +1,4 @@
-\\Finding primes between two numbers which are integers
+\\Finding primes between two numbers which are integers only
 
 #include <iostream>
 #include <vector>
