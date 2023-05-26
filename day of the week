@@ -1,4 +1,4 @@
-//Begin with importing standard input output header file also known as stdio.h file over here
+//Begin with importing standard input output header file also known as stdio.h file
 
 #include <stdio.h>
 
