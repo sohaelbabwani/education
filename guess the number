@@ -1,5 +1,5 @@
 #It begins with importing random package.
-
+// Code starts here
 import random
 
 def binary_search_guess(low, high, answer):
