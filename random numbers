@@ -1,5 +1,5 @@
 # This program uses the randint() function from the random module to generate a random integer between 1 and 1000.
-// Code starts here
+
 
 from random import randint
 x = randint(1, 1000)
