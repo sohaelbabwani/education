@@ -1,5 +1,5 @@
 # Import QRCode from pyqrcode and png
-// Code starts here
+
 
 import pyqrcode
 import png
