@@ -1,5 +1,5 @@
 \\Finding primes between two numbers which are integers only
-//code starts here
+
 #include <iostream>
 #include <vector>
 #include <cmath>
