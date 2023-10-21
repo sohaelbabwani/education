@@ -1,5 +1,5 @@
 //code starts here
-//code starts here
+
 num = int(input("Enter a number: ")) # get the input from user
 
 factors = [] # create an empty list to store factors
