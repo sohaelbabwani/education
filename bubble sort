@@ -1,7 +1,7 @@
 //code starts here
 //code starts here
 #Bubble sort in Python. Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.
-
+# code starts here
 def bubbleSort(array):
     
   # loop to access each array elements over here
