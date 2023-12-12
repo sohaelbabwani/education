@@ -5,7 +5,7 @@
 //code starts here
 //code starts here
 #include <stdio.h>
-
+# code starts here
 int main() {
     int day, month, year, day_of_week;
 
