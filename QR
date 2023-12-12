@@ -7,7 +7,7 @@ import pyqrcode
 import png
 //code starts here
 from pyqrcode import QRCode
-
+# code starts here
 
 # String which represents the QR code
 s = "www.geeksforgeeks.org"
