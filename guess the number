@@ -2,7 +2,7 @@
 #It begins with importing random package.
 //code starts here
 import random
-
+# code starts here
 def binary_search_guess(low, high, answer):
     steps = 0
     while low <= high:
